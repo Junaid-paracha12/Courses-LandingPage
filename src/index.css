@@ -1,0 +1,30 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,500;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Encode Sans",sans-serif;
+   
+    }
+    .app-container{
+      @apply w-[90vw] xl:w-[95vw] m-auto;
+    }
+    .nav-default {
+      @apply  absolute top-8 lg:top-5 left-0 right-0 transition-all duration-300;
+    }
+    .button-theme {
+      @apply px-7 py-1 rounded active:scale-90 transition-all duration-300 hover:scale-105 ease-in-out shadow-md sm:text-sm;
+    }
+    .hover-theme {
+      @apply  cursor-pointer hover:scale-105 duration-300 transition-all ;
+    }
+    .scroll-hidden::-webkit-scrollbar {
+      display: none ;
+    }
+}
